@@ -4,8 +4,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#b91c1c">
-<meta name="description" content="PNG digital business providing independent CellMoni credit assistance and enquiries about mobile top-ups and bill payments.">
+<meta name="theme-color" content="#8b0000">
+<meta name="description" content="Digicel CellMoni Trade - Independent PNG digital online business for CellMoni credit enquiries.">
 
 <title>Digicel CellMoni Trade | PNG Online Business</title>
 
@@ -16,30 +16,30 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 110px;
 }
 
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  color: #ffffff;
-  background-color: #101827;
-
-  /* Brighter wallpaper */
+  color: #202020;
+  background-color: #f5f5f5;
   background-image:
     linear-gradient(
-      rgba(0,0,0,.30),
-      rgba(0,0,0,.42)
+      rgba(255,255,255,.12),
+      rgba(255,255,255,.22)
     ),
     url("IMG_222c38b7-ca5d-403b-8b5b-a030bc22478d.jpg");
-
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   min-height: 100vh;
 }
 
+/* HEADER */
+
 header {
-  background: rgba(130,0,0,.94);
+  background: #8b0000;
   padding: 14px;
   display: flex;
   align-items: center;
@@ -47,7 +47,8 @@ header {
   position: sticky;
   top: 0;
   z-index: 10;
-  backdrop-filter: blur(8px);
+  color: white;
+  box-shadow: 0 3px 12px rgba(0,0,0,.2);
 }
 
 .profile {
@@ -75,10 +76,13 @@ main {
   padding: 15px;
 }
 
+/* HERO */
+
 .hero {
-  background: rgba(130,0,0,.86);
+  background: rgba(139,0,0,.93);
+  color: white;
   border-radius: 18px;
-  padding: 24px;
+  padding: 25px;
   margin: 15px 0;
   text-align: center;
 }
@@ -89,16 +93,33 @@ main {
 }
 
 .hero p {
-  line-height: 1.6;
+  line-height: 1.7;
 }
 
+.learn-btn {
+  display: inline-block;
+  padding: 14px 20px;
+  background: white;
+  color: #8b0000;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 11px;
+  margin-top: 10px;
+}
+
+/* WHITE SECTIONS */
+
 .agent,
-.info-section {
-  background: rgba(15,23,42,.95);
-  padding: 20px;
-  border-radius: 15px;
-  margin: 18px 0;
-  border: 1px solid rgba(255,255,255,.15);
+.info-section,
+#shop,
+.payment {
+  background: rgba(255,255,255,.97);
+  color: #202020;
+  padding: 22px;
+  border-radius: 16px;
+  margin: 20px 0;
+  border: 1px solid #dddddd;
+  box-shadow: 0 4px 16px rgba(0,0,0,.12);
 }
 
 .agent {
@@ -109,121 +130,33 @@ main {
   line-height: 1.8;
 }
 
-.info-section h2 {
-  color: #fda4af;
+.info-section h2,
+.agent h2,
+#shop h2,
+.payment h2 {
+  color: #8b0000;
 }
 
+/* BUTTONS */
+
 .whatsapp {
-  background: #16a34a;
+  background: #8b0000;
   color: white;
   display: inline-block;
   text-decoration: none;
-  padding: 14px 20px;
+  padding: 15px 20px;
   border-radius: 12px;
   font-weight: bold;
   margin: 10px 0;
+  box-shadow: 0 3px 8px rgba(0,0,0,.15);
 }
 
 .whatsapp:hover {
-  background: #15803d;
-}
-
-.learn-btn {
-  display: inline-block;
-  padding: 13px 20px;
-  background: #ffffff;
-  color: #991b1b;
-  text-decoration: none;
-  font-weight: bold;
-  border-radius: 10px;
-  margin-top: 10px;
-}
-
-.ad-area {
-  overflow: hidden;
-  width: 100%;
-  border-radius: 15px;
-  background: rgba(0,0,0,.35);
-  margin: 15px 0;
-  padding: 12px 0;
-}
-
-.ad-track {
-  display: flex;
-  width: max-content;
-  animation: slideAd 32s linear infinite;
-}
-
-.ad-track img {
-  width: min(80vw,430px);
-  height: 170px;
-  object-fit: contain;
-  flex-shrink: 0;
-  margin-right: 25px;
-}
-
-@keyframes slideAd {
-  from {transform:translateX(0)}
-  to {transform:translateX(-50%)}
-}
-
-.services {
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
-  gap: 12px;
-  margin-top: 15px;
-}
-
-.service-card {
-  background: #263449;
-  padding: 18px;
-  border-radius: 13px;
-  text-align: center;
-}
-
-.service-icon {
-  font-size: 30px;
-}
-
-.service-card h3 {
-  font-size: 16px;
-  margin-bottom: 8px;
-}
-
-.service-card p {
-  font-size: 13px;
-  line-height: 1.6;
-  color: #e2e8f0;
-}
-
-.products {
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
-  gap: 12px;
-  margin-top: 15px;
-}
-
-.product {
-  background: rgba(15,23,42,.96);
-  padding: 16px;
-  border-radius: 15px;
-  border: 1px solid rgba(255,255,255,.16);
-  text-align: center;
-}
-
-.product h3 {
-  margin: 4px 0 12px;
-}
-
-.price {
-  color: #fda4af;
-  font-weight: bold;
-  font-size: 20px;
-  margin-bottom: 12px;
+  background: #a50000;
 }
 
 button {
-  background: #dc2626;
+  background: #8b0000;
   color: white;
   padding: 13px;
   border: 0;
@@ -233,26 +166,130 @@ button {
 }
 
 button:hover {
-  background: #ef4444;
+  background: #a50000;
+}
+
+button:active {
+  opacity: .85;
+}
+
+/* LARGE MOVING ADVERTISEMENT */
+
+.ad-area {
+  overflow: hidden;
+  width: 100%;
+  border-radius: 16px;
+  background: rgba(255,255,255,.85);
+  margin: 20px 0;
+  padding: 18px 0;
+  box-shadow: 0 3px 12px rgba(0,0,0,.1);
+}
+
+.ad-track {
+  display: flex;
+  width: max-content;
+  animation: slideAd 38s linear infinite;
+}
+
+.ad-track img {
+  width: min(92vw,650px);
+  height: 340px;
+  object-fit: contain;
+  flex-shrink: 0;
+  margin-right: 25px;
+}
+
+@keyframes slideAd {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* SERVICES */
+
+.services {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 12px;
+  margin-top: 15px;
+}
+
+.service-card {
+  background: #ffffff;
+  color: #202020;
+  padding: 18px;
+  border-radius: 13px;
+  text-align: center;
+  border: 1px solid #e5e5e5;
+  box-shadow: 0 2px 8px rgba(0,0,0,.07);
+}
+
+.service-icon {
+  font-size: 30px;
+}
+
+.service-card h3 {
+  font-size: 16px;
+  margin-bottom: 8px;
+  color: #8b0000;
+}
+
+.service-card p {
+  font-size: 13px;
+  line-height: 1.6;
+  color: #444444;
+}
+
+/* PRODUCTS */
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.product {
+  background: white;
+  color: #202020;
+  padding: 16px;
+  border-radius: 15px;
+  border: 1px solid #dddddd;
+  text-align: center;
+  box-shadow: 0 3px 10px rgba(0,0,0,.08);
+}
+
+.product h3 {
+  margin: 4px 0 12px;
+}
+
+.price {
+  color: #8b0000;
+  font-weight: bold;
+  font-size: 22px;
+  margin-bottom: 12px;
 }
 
 .product button {
   width: 100%;
 }
 
+/* PAYMENT */
+
 .payment {
   display: none;
-  background: rgba(15,23,42,.98);
-  padding: 22px;
-  border-radius: 17px;
-  margin: 20px 0;
 }
 
 .detail {
-  background: #020617;
+  background: #f3f4f6;
+  color: #202020;
   padding: 15px;
   border-radius: 10px;
   margin: 12px 0;
+  border: 1px solid #dedede;
   overflow-wrap: anywhere;
 }
 
@@ -264,31 +301,32 @@ button:hover {
 
 .notice {
   font-size: 13px;
-  color: #e2e8f0;
+  color: #444444;
   line-height: 1.7;
 }
 
-#shop {
-  background: rgba(15,23,42,.70);
-  padding: 15px;
-  border-radius: 16px;
-  margin: 18px 0;
+.hero .notice {
+  color: #ffffff;
 }
 
+/* FOOTER */
+
 footer {
-  background: rgba(0,0,0,.88);
+  background: #8b0000;
+  color: white;
   text-align: center;
   padding: 25px;
   margin-top: 30px;
-  color: #cbd5e1;
   font-size: 13px;
   line-height: 1.7;
 }
 
+/* WELCOME ADVERTISEMENT */
+
 .welcome-overlay {
   position: fixed;
   inset: 0;
-  background: rgba(0,0,0,.85);
+  background: rgba(0,0,0,.80);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -301,15 +339,20 @@ footer {
   max-width: 430px;
   max-height: 90vh;
   overflow-y: auto;
-  background: #172033;
+  background: #ffffff;
+  color: #202020;
   border-radius: 20px;
   padding: 20px;
   text-align: center;
 }
 
+.welcome-box h2 {
+  color: #8b0000;
+}
+
 .welcome-box img {
   width: 100%;
-  max-height: 260px;
+  max-height: 350px;
   object-fit: contain;
   border-radius: 12px;
 }
@@ -319,6 +362,8 @@ footer {
   margin-top: 12px;
 }
 
+/* RESPONSIVE DESIGN */
+
 @media(min-width:650px) {
   .products {
     grid-template-columns: repeat(4,1fr);
@@ -326,6 +371,27 @@ footer {
 
   .services {
     grid-template-columns: repeat(3,1fr);
+  }
+}
+
+@media(max-width:600px) {
+  .ad-track img {
+    width: 90vw;
+    height: 290px;
+  }
+
+  .product {
+    padding: 14px;
+  }
+
+  .price {
+    font-size: 20px;
+  }
+
+  .info-section,
+  .agent,
+  .payment {
+    padding: 18px;
   }
 }
 
@@ -416,7 +482,7 @@ footer {
 
 </section>
 
-<!-- MOVING ADVERTISEMENT -->
+<!-- LARGE MOVING ADVERTISEMENT -->
 
 <div class="ad-area">
 
