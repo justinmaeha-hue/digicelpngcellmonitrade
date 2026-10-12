@@ -5,8 +5,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#b91c1c">
+<meta name="description" content="PNG digital business providing independent CellMoni credit assistance and enquiries about mobile top-ups and bill payments.">
 
-<title>Digicel CellMoni Trade</title>
+<title>Digicel CellMoni Trade | PNG Online Business</title>
 
 <style>
 * {
@@ -20,14 +21,17 @@ html {
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  color: white;
+  color: #ffffff;
   background-color: #101827;
+
+  /* Brighter wallpaper */
   background-image:
     linear-gradient(
-      rgba(0,0,0,.65),
-      rgba(0,0,0,.75)
+      rgba(0,0,0,.30),
+      rgba(0,0,0,.42)
     ),
     url("IMG_222c38b7-ca5d-403b-8b5b-a030bc22478d.jpg");
+
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -35,7 +39,7 @@ body {
 }
 
 header {
-  background: rgba(130,0,0,.88);
+  background: rgba(130,0,0,.94);
   padding: 14px;
   display: flex;
   align-items: center;
@@ -72,23 +76,41 @@ main {
 }
 
 .hero {
-  background: rgba(130,0,0,.75);
+  background: rgba(130,0,0,.86);
   border-radius: 18px;
-  padding: 22px;
+  padding: 24px;
   margin: 15px 0;
   text-align: center;
 }
 
 .hero h2 {
   font-size: 26px;
+  margin-top: 0;
+}
+
+.hero p {
+  line-height: 1.6;
+}
+
+.agent,
+.info-section {
+  background: rgba(15,23,42,.95);
+  padding: 20px;
+  border-radius: 15px;
+  margin: 18px 0;
+  border: 1px solid rgba(255,255,255,.15);
 }
 
 .agent {
-  background: rgba(15,23,42,.88);
-  padding: 18px;
-  border-radius: 15px;
   text-align: center;
-  margin: 18px 0;
+}
+
+.info-section p {
+  line-height: 1.8;
+}
+
+.info-section h2 {
+  color: #fda4af;
 }
 
 .whatsapp {
@@ -96,19 +118,32 @@ main {
   color: white;
   display: inline-block;
   text-decoration: none;
-  padding: 14px 22px;
+  padding: 14px 20px;
   border-radius: 12px;
   font-weight: bold;
   margin: 10px 0;
-  border: 0;
-  cursor: pointer;
+}
+
+.whatsapp:hover {
+  background: #15803d;
+}
+
+.learn-btn {
+  display: inline-block;
+  padding: 13px 20px;
+  background: #ffffff;
+  color: #991b1b;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 10px;
+  margin-top: 10px;
 }
 
 .ad-area {
   overflow: hidden;
   width: 100%;
   border-radius: 15px;
-  background: rgba(0,0,0,.45);
+  background: rgba(0,0,0,.35);
   margin: 15px 0;
   padding: 12px 0;
 }
@@ -116,11 +151,11 @@ main {
 .ad-track {
   display: flex;
   width: max-content;
-  animation: slideAd 28s linear infinite;
+  animation: slideAd 32s linear infinite;
 }
 
 .ad-track img {
-  width: min(80vw, 430px);
+  width: min(80vw,430px);
   height: 170px;
   object-fit: contain;
   flex-shrink: 0;
@@ -128,21 +163,51 @@ main {
 }
 
 @keyframes slideAd {
-  from {transform: translateX(0)}
-  to {transform: translateX(-50%)}
+  from {transform:translateX(0)}
+  to {transform:translateX(-50%)}
+}
+
+.services {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 12px;
+  margin-top: 15px;
+}
+
+.service-card {
+  background: #263449;
+  padding: 18px;
+  border-radius: 13px;
+  text-align: center;
+}
+
+.service-icon {
+  font-size: 30px;
+}
+
+.service-card h3 {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.service-card p {
+  font-size: 13px;
+  line-height: 1.6;
+  color: #e2e8f0;
 }
 
 .products {
   display: grid;
   grid-template-columns: repeat(2,1fr);
   gap: 12px;
+  margin-top: 15px;
 }
 
 .product {
-  background: rgba(15,23,42,.92);
-  padding: 15px;
+  background: rgba(15,23,42,.96);
+  padding: 16px;
   border-radius: 15px;
-  border: 1px solid rgba(255,255,255,.12);
+  border: 1px solid rgba(255,255,255,.16);
   text-align: center;
 }
 
@@ -151,10 +216,10 @@ main {
 }
 
 .price {
-  color: #fca5a5;
+  color: #fda4af;
   font-weight: bold;
-  font-size: 19px;
-  margin-bottom: 10px;
+  font-size: 20px;
+  margin-bottom: 12px;
 }
 
 button {
@@ -167,17 +232,17 @@ button {
   font-size: 15px;
 }
 
+button:hover {
+  background: #ef4444;
+}
+
 .product button {
   width: 100%;
 }
 
-button:active {
-  opacity: .8;
-}
-
 .payment {
   display: none;
-  background: rgba(15,23,42,.96);
+  background: rgba(15,23,42,.98);
   padding: 22px;
   border-radius: 17px;
   margin: 20px 0;
@@ -199,17 +264,25 @@ button:active {
 
 .notice {
   font-size: 13px;
-  color: #cbd5e1;
-  line-height: 1.6;
+  color: #e2e8f0;
+  line-height: 1.7;
+}
+
+#shop {
+  background: rgba(15,23,42,.70);
+  padding: 15px;
+  border-radius: 16px;
+  margin: 18px 0;
 }
 
 footer {
-  background: rgba(0,0,0,.8);
+  background: rgba(0,0,0,.88);
   text-align: center;
   padding: 25px;
   margin-top: 30px;
-  color: #d1d5db;
+  color: #cbd5e1;
   font-size: 13px;
+  line-height: 1.7;
 }
 
 .welcome-overlay {
@@ -226,6 +299,8 @@ footer {
 .welcome-box {
   width: 100%;
   max-width: 430px;
+  max-height: 90vh;
+  overflow-y: auto;
   background: #172033;
   border-radius: 20px;
   padding: 20px;
@@ -248,12 +323,17 @@ footer {
   .products {
     grid-template-columns: repeat(4,1fr);
   }
+
+  .services {
+    grid-template-columns: repeat(3,1fr);
+  }
 }
 
 @media(prefers-reduced-motion:reduce) {
   .ad-track {
     animation: none;
   }
+
   html {
     scroll-behavior: auto;
   }
@@ -264,8 +344,10 @@ footer {
 <body>
 
 <!-- WELCOME ADVERTISEMENT -->
+
 <div class="welcome-overlay" id="welcome">
   <div class="welcome-box">
+
     <h2>Welcome to Digicel CellMoni Trade</h2>
 
     <img
@@ -273,16 +355,22 @@ footer {
       alt="CellMoni Trade advertisement"
     >
 
-    <p>Purchase CellMoni credit through our independent agent service.</p>
+    <p>
+      Welcome to our PNG digital online business.
+      Explore our CellMoni credit products and services.
+    </p>
 
     <button onclick="closeWelcome()">
       Enter Website
     </button>
+
   </div>
 </div>
 
 <!-- HEADER -->
+
 <header>
+
   <img
     class="profile"
     src="1779490161340.jpg"
@@ -291,43 +379,231 @@ footer {
 
   <div>
     <h1>Digicel CellMoni Trade</h1>
+    <p>PNG Digital Online Business</p>
     <p>Agent: MAIYA BUISON</p>
   </div>
+
 </header>
 
 <main>
 
-<!-- HERO -->
+<!-- HOMEPAGE -->
+
 <section class="hero">
-  <h2>Welcome to CellMoni Trade</h2>
 
-  <p>Buy CellMoni credit from K5 to K200.</p>
+  <h2>Welcome to Digicel CellMoni Trade</h2>
 
-  <p>Fast and convenient agent assistance.</p>
+  <p>
+    Your local PNG digital business for
+    CellMoni credit purchase assistance.
+  </p>
+
+  <p>
+    Explore convenient mobile services
+    and digital payment options.
+  </p>
+
+  <p><strong>Business Agent: MAIYA BUISON</strong></p>
+
+  <a href="#about" class="learn-btn">
+    Learn More About Our Business
+  </a>
 
   <p class="notice">
-    Independent agent service.
-    Not an official Digicel website or app.
+    Independently operated service.
+    Not an official Digicel website.
   </p>
+
 </section>
 
 <!-- MOVING ADVERTISEMENT -->
+
 <div class="ad-area">
-  <div class="ad-track" id="adTrack">
-    <img src="file_00000000bfb481faa5d435ad6d7fd4c6.png" alt="Advertisement">
+
+  <div class="ad-track">
+
+    <img src="file_00000000bfb481faa5d435ad6d7fd4c6.png" alt="Promotion">
+
     <img src="file_00000000bfb481faa5d435ad6d7fd4c6.png" alt="">
+
     <img src="file_00000000bfb481faa5d435ad6d7fd4c6.png" alt="">
+
     <img src="file_00000000bfb481faa5d435ad6d7fd4c6.png" alt="">
+
   </div>
+
 </div>
 
-<!-- AGENT -->
+<!-- ABOUT OUR BUSINESS -->
+
+<section class="info-section" id="about">
+
+  <h2>About Our Online Business</h2>
+
+  <p>
+    Welcome to Digicel CellMoni Trade,
+    a small independent digital online
+    business based in Papua New Guinea.
+  </p>
+
+  <p>
+    Our aim is to make it easier for customers
+    to enquire about digital mobile money
+    services and purchase available
+    CellMoni credit through our agent.
+  </p>
+
+  <p>
+    We understand that mobile phones,
+    electricity, communication and
+    digital payments are important
+    parts of everyday life in PNG.
+  </p>
+
+  <p>
+    Our website allows customers to
+    view available credit amounts,
+    compare the total prices,
+    review payment instructions,
+    and communicate directly with
+    our business agent through WhatsApp.
+  </p>
+
+  <p>
+    We believe in clear pricing,
+    helpful customer communication,
+    and transparent payment procedures.
+  </p>
+
+  <p>
+    Our business is independently
+    operated by MAIYA BUISON.
+    We are not claiming to be
+    Digicel or BSP.
+  </p>
+
+</section>
+
+<!-- OUR SERVICES -->
+
+<section class="info-section" id="services">
+
+  <h2>Our Digital Services</h2>
+
+  <p>
+    CellMoni technology supports several
+    types of digital transactions in
+    Papua New Guinea.
+  </p>
+
+  <p>
+    Below are the services customers
+    can learn about or enquire about.
+    Availability through our business
+    must be confirmed with the agent.
+  </p>
+
+  <div class="services">
+
+    <div class="service-card">
+      <div class="service-icon">📱</div>
+      <h3>Mobile Top-Up</h3>
+      <p>
+        Enquire about purchasing
+        mobile phone credit to
+        stay connected.
+      </p>
+    </div>
+
+    <div class="service-card">
+      <div class="service-icon">💳</div>
+      <h3>CellMoni Credit</h3>
+      <p>
+        Browse our listed credit
+        values from K5 to K200
+        and view the total prices.
+      </p>
+    </div>
+
+    <div class="service-card">
+      <div class="service-icon">⚡</div>
+      <h3>EasiPay Electricity</h3>
+      <p>
+        Learn about prepaid
+        electricity purchases
+        using supported
+        CellMoni services.
+      </p>
+    </div>
+
+    <div class="service-card">
+      <div class="service-icon">💧</div>
+      <h3>Water Bill Payments</h3>
+      <p>
+        Enquire about Water PNG
+        bill payment options
+        through CellMoni.
+      </p>
+    </div>
+
+    <div class="service-card">
+      <div class="service-icon">📶</div>
+      <h3>Data Bundles</h3>
+      <p>
+        Ask about available
+        mobile internet data
+        bundles and top-up options.
+      </p>
+    </div>
+
+    <div class="service-card">
+      <div class="service-icon">🧾</div>
+      <h3>Other Bill Payments</h3>
+      <p>
+        Contact our agent to
+        enquire about other
+        supported digital
+        payment services.
+      </p>
+    </div>
+
+  </div>
+
+  <p class="notice">
+    These are general CellMoni service categories.
+    Only the listed credit products have displayed
+    prices on this website. Other services require
+    confirmation of availability and pricing.
+  </p>
+
+  <a
+    class="whatsapp"
+    id="serviceWhatsapp"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    ☎ Ask About Our Services
+  </a>
+
+</section>
+
+<!-- CUSTOMER AGENT -->
+
 <section class="agent">
-  <h2>Customer Agent</h2>
+
+  <h2>Customer Support Agent</h2>
 
   <p><strong>MAIYA BUISON</strong></p>
 
-  <p>Need help purchasing CellMoni credit?</p>
+  <p>
+    Have questions about CellMoni credit
+    or digital payment services?
+  </p>
+
+  <p>
+    Contact our agent directly
+    through WhatsApp.
+  </p>
 
   <a
     class="whatsapp"
@@ -335,23 +611,34 @@ footer {
     target="_blank"
     rel="noopener noreferrer"
   >
-    &#x260E; Contact Agent on WhatsApp
+    ☎ Contact Agent on WhatsApp
   </a>
+
 </section>
 
 <!-- PRODUCTS -->
+
 <section id="shop">
+
   <h2>CellMoni Credit Products</h2>
 
   <p>
-    Select the credit amount you want.
-    The price shown is the total amount to pay.
+    Choose the credit amount you want
+    to purchase.
+  </p>
+
+  <p>
+    Each product displays the
+    total amount you will pay,
+    including our 10% agent markup.
   </p>
 
   <div class="products" id="productList"></div>
+
 </section>
 
 <!-- BSP PAYMENT -->
+
 <section class="payment" id="payment">
 
   <h2>BSP Payment Details</h2>
@@ -360,30 +647,38 @@ footer {
 
   <div class="detail" id="selectedProduct"></div>
 
-  <p><strong>Total amount to pay:</strong></p>
+  <p><strong>Total Amount to Pay:</strong></p>
 
   <div class="detail" id="paymentTotal"></div>
 
   <h3>Bank Transfer Information</h3>
 
   <div class="detail">
+
     <p><strong>Bank:</strong> BSP</p>
 
-    <p><strong>Account Name:</strong><br>
+    <p>
+      <strong>Account Name:</strong>
       BUISON MAIYA
     </p>
 
-    <p><strong>Account Number:</strong><br>
+    <p>
+      <strong>Account Number:</strong>
       0001466960
     </p>
+
   </div>
 
   <p>
-    Please transfer the exact amount to the
-    BSP account displayed above.
+    Please review your purchase details
+    and transfer the exact amount
+    using your own BSP banking service.
   </p>
 
-  <h3>Press the WhatsApp below to receive your credit</h3>
+  <h3>
+    Press the WhatsApp below
+    to receive your credit
+  </h3>
 
   <a
     class="whatsapp full"
@@ -391,14 +686,17 @@ footer {
     target="_blank"
     rel="noopener noreferrer"
   >
-    &#x260E; Contact Agent on WhatsApp
+    ☎ Contact Agent on WhatsApp
   </a>
 
   <p class="notice">
-    After payment, contact the agent and provide
-    your purchased amount and transaction reference.
-    Never share your banking PIN, password or OTP.
-    Payment must be verified before credit is supplied.
+    Contact the agent after payment
+    and provide your purchased amount
+    and transaction reference.
+    Never share your banking password,
+    PIN or OTP. Payment must be
+    independently verified before
+    credit is supplied.
   </p>
 
   <button class="full" onclick="backToProducts()">
@@ -407,52 +705,135 @@ footer {
 
 </section>
 
-<!-- INSTRUCTIONS -->
-<section class="agent">
-  <h2>How to Purchase</h2>
+<!-- PURCHASE INSTRUCTIONS -->
 
-  <p>1. Choose your CellMoni credit amount.</p>
-  <p>2. Press the Purchase button.</p>
-  <p>3. Review the BSP account information.</p>
-  <p>4. Complete your payment using BSP.</p>
-  <p>5. Contact the agent through WhatsApp.</p>
-  <p>6. The agent will verify payment and arrange your credit.</p>
+<section class="info-section">
+
+  <h2>How to Purchase CellMoni Credit</h2>
+
+  <p>1. Browse our available CellMoni credit products.</p>
+
+  <p>2. Select your preferred credit amount.</p>
+
+  <p>3. Press the Purchase button.</p>
+
+  <p>4. Review the displayed BSP payment details.</p>
+
+  <p>5. Complete your payment through your banking service.</p>
+
+  <p>6. Contact our agent through WhatsApp.</p>
+
+  <p>7. The agent verifies your payment and arranges your credit.</p>
+
+  <p class="notice">
+    This website does not automatically process
+    bank transfers or issue CellMoni credit.
+    Transactions are handled separately
+    by the agent.
+  </p>
+
+</section>
+
+<!-- BUSINESS VALUES -->
+
+<section class="info-section">
+
+  <h2>Why Choose Our Small Online Business?</h2>
+
+  <p>
+    <strong>Clear Prices:</strong>
+    Every listed credit product displays
+    the total amount customers pay.
+  </p>
+
+  <p>
+    <strong>Convenient Enquiries:</strong>
+    Customers can contact the agent
+    through WhatsApp.
+  </p>
+
+  <p>
+    <strong>Simple Purchase Process:</strong>
+    Choose your amount, review the
+    payment details and contact the agent.
+  </p>
+
+  <p>
+    <strong>PNG-Focused Service:</strong>
+    Our small business aims to support
+    customers interested in digital
+    mobile services in Papua New Guinea.
+  </p>
+
+  <p>
+    <strong>Customer Communication:</strong>
+    Customers can ask questions
+    before making a purchase.
+  </p>
+
 </section>
 
 </main>
 
 <footer>
+
   <p>© 2026 Digicel CellMoni Trade</p>
-  <p>Agent: MAIYA BUISON</p>
-  <p>Independent CellMoni Credit Service</p>
+
+  <p>PNG Digital Online Business</p>
+
+  <p>Operated by MAIYA BUISON</p>
+
+  <p>
+    Independent service.
+    Not affiliated with or officially
+    endorsed by Digicel or BSP.
+  </p>
+
 </footer>
 
 <script>
+
+// WHATSAPP CONTACT
+
 const whatsappNumber = "67578423441";
 
 const whatsappURL =
   "https://wa.me/" + whatsappNumber;
 
+function makeWhatsappLink(message) {
+  return whatsappURL + "?text=" +
+    encodeURIComponent(message);
+}
+
 document.getElementById("agentContact").href =
-  whatsappURL + "?text=" +
-  encodeURIComponent(
-    "Hello Agent, I would like to purchase CellMoni credit."
+  makeWhatsappLink(
+    "Hello Agent MAIYA BUISON. I would like to enquire about CellMoni credit."
   );
+
+document.getElementById("serviceWhatsapp").href =
+  makeWhatsappLink(
+    "Hello Agent MAIYA BUISON. I would like to know more about your available digital services."
+  );
+
+// WELCOME ADVERTISEMENT
 
 function closeWelcome() {
   document.getElementById("welcome").style.display = "none";
 }
 
+// CURRENCY FORMAT
+
 function formatKina(amount) {
   return "K" + amount.toFixed(2);
 }
+
+// PRODUCT GENERATION
 
 const productList =
   document.getElementById("productList");
 
 for (let amount = 5; amount <= 200; amount += 5) {
 
-  // Exact 10% markup
   const total = Math.round(amount * 110) / 100;
 
   const card = document.createElement("div");
@@ -475,9 +856,17 @@ for (let amount = 5; amount <= 200; amount += 5) {
     purchase(amount, total);
   });
 
-  card.append(heading, description, price, button);
+  card.append(
+    heading,
+    description,
+    price,
+    button
+  );
+
   productList.appendChild(card);
 }
+
+// PURCHASE FUNCTION
 
 function purchase(amount, total) {
 
@@ -492,11 +881,10 @@ function purchase(amount, total) {
     "I selected " + formatKina(amount) +
     " CellMoni credit. " +
     "The total payment is " + formatKina(total) +
-    ". Please help me receive my credit.";
+    ". Please help me arrange my credit.";
 
   document.getElementById("creditWhatsapp").href =
-    whatsappURL + "?text=" +
-    encodeURIComponent(message);
+    makeWhatsappLink(message);
 
   document.getElementById("shop").style.display = "none";
 
@@ -506,6 +894,8 @@ function purchase(amount, total) {
     behavior: "smooth"
   });
 }
+
+// BACK TO PRODUCTS
 
 function backToProducts() {
 
@@ -517,8 +907,8 @@ function backToProducts() {
     behavior: "smooth"
   });
 }
+
 </script>
 
 </body>
 </html>
-
